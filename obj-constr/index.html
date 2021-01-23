@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bokhylle</title>
+    <meta name="author" content="Magnus Manfelt N. Bergh"/>
+    <link rel="stylesheet" href="stil.css">
+    <link rel="preload" as="font" href="/fonts/Kalam-Regular.ttf" crossorigin>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+</head>
+
+<body>
+    <div class="logo"></div>
+
+    <Header class="header">
+        <p>Laget av <a href="http://mmnb.no" id="track-mmnb">Magnus Manfelt </a>(for nysgjerrige)</p>
+    </Header>
+
+    <div id="mySidenav" class="sidenav"></div>
+
+    <section class="content">
+        <div id="p2" class="header-titles"><p>bokens tittel og beskr. | bokslettng | lest-status</p></div>
+        <!--Elementet 'id p3' tar til seg data fra js-->
+        <div id="p3"></div>
+        <div id="p4" class="card" style="height: 300px; margin-top: 16px;">
+            <td>
+                <form name="submit_article" action="#"> 	
+                    <p><u>NY BOK</u></p>	
+                    <p><label for="tittel">Bok, tittel: </label><input type="text" name="tittel" ></p>
+                    <p><label for="forfatter">Bok, forfatter: </label><input name="forfatter"></input></p>
+                    <p><label for="sider">ant.sider: </label><input type="text" name="sider" ></p>
+                    <p><label for="lest">Lest? <select name="lest">
+                        <option value="Nei">Nei</option>
+                        <option value="Ja">Ja</option>
+                    </select></p> 	
+                    <p><input type="button" value="OK" name="submit" class="button" onclick="showElements(this.form);" style="width: 100%;"></p>
+                </form>
+            </td>
+        </div>
+
+        
+
+    </section>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

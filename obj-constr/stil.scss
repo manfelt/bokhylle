@@ -1,0 +1,135 @@
+@font-face {
+  font-family: Kalam;
+  src: url(fonts/Kalam-Regular.ttf);
+}
+
+html {
+  font-family: Kalam,serif;
+}
+
+.header {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 42px;
+  border-bottom: 1px solid #000;
+  overflow: hidden;
+  color: #fff;
+  background-color: #282828;
+  font-size: 18px;
+  white-space: nowrap;
+  text-align: center;
+  p {
+    a{
+      text-decoration: none !important;
+      color: #ffdada;
+    }
+  }
+}
+
+.logo {
+  position: absolute;
+  z-index: 4;
+  top: 5px;
+  left: 1px;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.content {
+  position: absolute;
+  z-index: 1;
+  top: 42px;
+  left: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100vw;
+  height: calc(100vh - 42px);
+  padding: 15px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #c6b5b5a8;
+  background-color: #391406c2;
+  .header-titles {
+    margin-left: auto;
+    width: 56.5%;
+    font-family: "Maven Pro",sans-serif;
+  }
+}
+
+.card {
+  width:400px;
+  height:80px;
+  background:#287342;
+  position:relative;
+  left:0;
+  right:0;
+  margin:auto;
+  top:0;
+  bottom:0;
+  border-radius:10px;
+  box-shadow: 0px 10px 30px 2px rgba(0, 0, 0, 0.55);
+  display: flex;
+  img {
+      width:15%;
+      height:auto;
+      border-radius:10px 0 0 10px;
+      position:relative;
+      display: inline-block; 
+      vertical-align: top;
+    }
+  p {
+    color: white;
+    text-align: center;
+    width: 40%;
+  }
+  input {
+    width: 20%
+  }
+  form {
+    margin-left: 27%;
+    input {
+      width: 150%;
+    }
+  }
+  }
+
+.button {
+  background: linear-gradient(134deg, hsl(44, 96%, 65%), hsl(34, 95%, 45%));
+  color: #4d463a;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 0;
+  padding: 10px 0;
+}
+
+.sidenav {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  background-color: #a06c58;
+  overflow-x: hidden;
+  padding-top: 60px;
+  background-image: url("img/books.png");
+  background-repeat: repeat-y;
+}
+
+
+//Nyttig for for smarttelefoner.
+@media only screen and (max-width: 700px) {
+  .sidenav {
+    z-index: 1;
+  }
+}
